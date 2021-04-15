@@ -1,0 +1,71 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+body {
+  font-family: 'Nunito Sans', sans-serif;
+  background: #fafafa;
+  color: #111517;
+  font-size: 14px; }
+  body header .navbar {
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-bottom: 3%; }
+    body header .navbar h1 {
+      font-size: 2rem;
+      font-weight: 800; }
+    body header .navbar button {
+      border: none;
+      background: none; }
+  body main {
+    width: 90%;
+    margin: auto; }
+    body main .input {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 3%; }
+      body main .input .form-control {
+        width: 40%;
+        background-image: url("../loupe.svg");
+        background-repeat: no-repeat;
+        background-size: 30px; }
+      body main .input .form-select {
+        width: 25%; }
+    body main .card {
+      background-color: white;
+      margin-bottom: 20%; }
+      body main .card h2 {
+        font-size: 1rem;
+        font-weight: 800;
+        margin-bottom: 2.5%; }
+      body main .card span {
+        font-weight: 600; }
+      body main .card .card-img-top {
+        width: 100%;
+        cursor: pointer; }
+
+.dark {
+  background-color: #202c37;
+  color: white; }
+  .dark .dark-button {
+    color: white; }
+  .dark .card-dark {
+    background-color: #2b3945; }
+
+/*# sourceMappingURL=style.css.map */

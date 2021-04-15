@@ -1,0 +1,24 @@
+{
+  "dependencies": {
+    "node-sass": "^5.0.0"
+  },
+  "name": "REST-countries-API",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "scss": "node-sass --watch src/scss --output src/css --source-map true"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CharlotteMoureau/REST-countries-API.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CharlotteMoureau/REST-countries-API/issues"
+  },
+  "homepage": "https://github.com/CharlotteMoureau/REST-countries-API#readme",
+  "description": ""
+}
