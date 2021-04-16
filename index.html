@@ -28,15 +28,16 @@
         </div>
     </header>
     <main>
-        <div class="input">
-            <input class="form-control" type="text" placeholder="Search for a country...">
-            <select class="form-select" aria-label="Default select example">
-                <option selected>Filter by Region</option>
-                <option value="1">Africa</option>
-                <option value="2">America</option>
-                <option value="3">Asia</option>
-                <option value="4">Europe</option>
-                <option value="5">Oceania</option>
+        <div id="input-bar">
+            <input class="form-control light" id="input" type="text" placeholder="Search for a country...">
+            <select class="form-select" id="select" aria-label="Default select example">
+                <option disabled selected value="0">Filter by Region</option>
+                <option value="Africa">Africa</option>
+                <option value="Americas">America</option>
+                <option value="Asia">Asia</option>
+                <option value="Europe">Europe</option>
+                <option value="Oceania">Oceania</option>
+                <option value="All">All</option>
             </select>
         </div>
         <div class="row" id="target"></div>
