@@ -191,16 +191,26 @@ function filterContinents(data) {
     })
 }
 
-// function filterCountries() {
-//     const input = document.getElementById('input')
-//     const filter = input.value.toUpperCase()
-//     const names = Array.from(document.getElementsByClassName('name'))
-//     const cards = Array.from(document.getElementsByClassName('card'))
+function filterCountries(data) {
+    const input = document.getElementById('input')
 
-// }
+    input.addEventListener('keyup', () => {
+        target.innerHTML = ''
+
+        const filter = input.value.toUpperCase()
+        data.forEach(({ flag, alpha3Code, name, population, region, capital }) => {
+            const nameUpperCase = name.toUpperCase()
+            if (nameUpperCase.includes(filter)) {
+                newCards(flag, alpha3Code, name, population, region, capital)
+            }
+        })
+    })
+
+}
 
 api.then((data) => {
     displayShortCards(data)
-    darkMode()
     filterContinents(data)
+    filterCountries(data)
+    darkMode()
 })
